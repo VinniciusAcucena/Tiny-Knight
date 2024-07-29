@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bidfcjpvjd64g"]
+
+[ext_resource type="Script" path="res://UI/game_ui.gd" id="1_cjpif"]
+
+[sub_resource type="SystemFont" id="SystemFont_xmm3v"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_h8rdw"]
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_cjpif")
+
+[node name="TimerLabel" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -21.0
+offset_top = 24.0
+offset_right = 19.0
+offset_bottom = 47.0
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("SystemFont_xmm3v")
+text = "2:45"
+label_settings = SubResource("LabelSettings_h8rdw")
+horizontal_alignment = 1
+vertical_alignment = 1

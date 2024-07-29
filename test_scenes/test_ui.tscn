@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://bc217xmjwfn8j"]
+
+[ext_resource type="PackedScene" uid="uid://c50dyrnd7teu" path="res://Player/player.tscn" id="1_l0s8j"]
+[ext_resource type="Texture2D" uid="uid://3is61qmn4kbu" path="res://addons/Tiny Swords/UI/Banners/Banner_Horizontal.png" id="2_64kjp"]
+[ext_resource type="PackedScene" uid="uid://bidfcjpvjd64g" path="res://UI/game_ui.tscn" id="2_bl5g1"]
+[ext_resource type="PackedScene" uid="uid://cuvjf6cd8s0xm" path="res://enemies/goblin.tscn" id="3_3wgb1"]
+[ext_resource type="PackedScene" uid="uid://c36icrodxxv7p" path="res://enemies/pawn.tscn" id="4_gsx5q"]
+[ext_resource type="PackedScene" uid="uid://dnynmuam5e1yx" path="res://enemies/sheep.tscn" id="5_3fk4c"]
+
+[node name="TestUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_l0s8j")]
+position = Vector2(568, 262)
+
+[node name="GameUI" parent="." instance=ExtResource("2_bl5g1")]
+
+[node name="BannerHorizontal" type="Sprite2D" parent="."]
+position = Vector2(200, 228)
+texture = ExtResource("2_64kjp")
+
+[node name="Goblin" parent="." instance=ExtResource("3_3wgb1")]
+position = Vector2(1120, 427)
+
+[node name="Pawn" parent="." instance=ExtResource("4_gsx5q")]
+position = Vector2(119, 124)
+
+[node name="Sheep" parent="." instance=ExtResource("5_3fk4c")]
+position = Vector2(119, 406)

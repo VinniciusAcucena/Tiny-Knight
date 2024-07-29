@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://2gpsqnn3wpeq"]
+
+[ext_resource type="Texture2D" uid="uid://ceussg71simwl" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Red/Warrior_Red.png" id="1_fhkxn"]
+[ext_resource type="PackedScene" uid="uid://c50dyrnd7teu" path="res://Player/player.tscn" id="2_1441l"]
+[ext_resource type="PackedScene" uid="uid://c36icrodxxv7p" path="res://enemies/pawn.tscn" id="3_7tsyh"]
+[ext_resource type="PackedScene" uid="uid://dnynmuam5e1yx" path="res://enemies/sheep.tscn" id="4_opycg"]
+[ext_resource type="PackedScene" uid="uid://cuvjf6cd8s0xm" path="res://enemies/goblin.tscn" id="5_krnow"]
+[ext_resource type="PackedScene" uid="uid://d0yhxipepfb3h" path="res://misc/meat.tscn" id="6_uqlev"]
+
+[node name="TestPlayer" type="Node2D"]
+
+[node name="WarriorRed" type="Sprite2D" parent="."]
+position = Vector2(-531, 101)
+texture = ExtResource("1_fhkxn")
+
+[node name="Pawn2" parent="." instance=ExtResource("3_7tsyh")]
+position = Vector2(900, 351)
+
+[node name="Pawn5" parent="." instance=ExtResource("3_7tsyh")]
+position = Vector2(733, 182)
+
+[node name="Pawn6" parent="." instance=ExtResource("3_7tsyh")]
+position = Vector2(800, 465)
+
+[node name="Player" parent="." instance=ExtResource("2_1441l")]
+
+[node name="Sheep" parent="." instance=ExtResource("4_opycg")]
+position = Vector2(124, 221)
+
+[node name="Sheep2" parent="." instance=ExtResource("4_opycg")]
+position = Vector2(125, 326)
+
+[node name="Sheep3" parent="." instance=ExtResource("4_opycg")]
+position = Vector2(128, 433)
+
+[node name="Pawn" parent="." instance=ExtResource("5_krnow")]
+position = Vector2(874, 691)
+
+[node name="Meat" parent="." instance=ExtResource("6_uqlev")]
+position = Vector2(434, 569)
